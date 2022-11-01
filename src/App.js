@@ -1,3 +1,5 @@
+
+import { useState } from 'react';
 import Header from './components/Header';
 import AlbumList from './components/AlbumList';
 
@@ -7,11 +9,12 @@ import './App.css';
 
 
 function App() {
+  const [toggle, setToggle] = useState(true)
   return (
     <div className="App">
       <Header />
-      <AlbumList />
-      <AddAlbum />
+      <AlbumList toggle/>
+      <AddAlbum  setToggle={setToggle} toggle={toggle}/>
     </div>
   );
 }
