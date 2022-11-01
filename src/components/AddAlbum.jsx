@@ -39,7 +39,7 @@ export default function AddAlbum({ setToggle, toggle }) {
                         value={year} />
                 </label> <br />
                 <label htmlFor="artist">Artist:
-                    <input type="text" name="artist" required xonChange={e => setArtist(e.target.value)}
+                    <input type="text" name="artist" required onChange={e => setArtist(e.target.value)}
                         value={artist} />
                 </label><br />
                 <input type="submit" value='Add Album' />
