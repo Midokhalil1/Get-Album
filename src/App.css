@@ -3,7 +3,7 @@
 }
 
 header {
-  border: 2px salmon;
+  border: 2px solid red;
   margin: calc(1em + 1vw)
 }
 
@@ -13,6 +13,15 @@ header {
 }
 
 .album {
-  border: 2px solid gray;
+  border: 2px solid purple;
   margin: 1em;
+
+}
+
+.add-album {
+
+  border: 2px solid purple;
+  margin: 1em;
+
+
 }
